@@ -1,8 +1,25 @@
+/**
+ * Required External Modules */
+
 const express = require('express');
+const path = require("path");
+
+// App Variables 
+
 const app = express();
 
 let visitCount = 0;
 let Slogans = new Array(20).fill(0);
+
+/**
+ *  App Configuration */
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "pug");
+
+/**
+ * Routes Definitions */
+
 
 app.get('/', (req, res) => {
     visitCount++;
@@ -28,3 +45,5 @@ app.listen(3000, () => {
     console.log('your app listening on port 3000.');
 });
 
+/**
+ * Server Activation */
