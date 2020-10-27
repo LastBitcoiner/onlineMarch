@@ -23,8 +23,7 @@ app.set("view engine", "pug");
 
 app.get('/', (req, res) => {
     visitCount++;
-    res.render("index", { title: "Home", visitors: visitCount });
-    // res.send(`<b>we have</b> ${visitCount} visitor`);
+    res.render("index", { title: "خانه", visitors: visitCount });
 });
 
 app.get('/:SloganNum', (req, res) => {
