@@ -14,6 +14,12 @@ app.get('/:SloganNum', (req, res) => {
     res.send(`<b>counted</b> ${Slogans[req.params.SloganNum]} Slogan`);
 });
 
+app.post('/Slogans', (req, res) => {
+    Slogans[req.params.SloganNum]++;
+
+    // parameters = SloganNum
+})
+
 app.use((req, res, next) => {
     res.status(404).send("با عرض پوزش چنین صفحه ای موجود نیست");
 });
