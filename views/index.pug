@@ -3,14 +3,17 @@ extends layout
 block header-tags
   script(src="/ajaxcalls.js")
   link(rel="stylesheet" href="/style.css")
+  link(rel="stylesheet", href="/bootstrap.min.css")
 
 block layout-content
-  div.View
+  div.View.container
     h1.Banner WHATABYTE
     div.Message
       div.Title
         h3 به راهپیمایی انلاین خوش آمدید
         h1 تعداد شرکت کنندگان در راهپیمایی آنلاین #{visitors}
+        h3
+          a(class='btn btn-primary btn-lg active',role='button' ,aria-pressed="true" , href='#' onclick="SubmitSlogan(2)") submit 2
       span.Details Access the WHATABYTE Team Portal
     div.NavButtons
       a(href="/user")
