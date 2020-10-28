@@ -28,15 +28,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:SloganNum', (req, res) => {
-    Slogans[req.params.SloganNum]++;
     res.send(`<b>counted</b> ${Slogans[req.params.SloganNum]} Slogan`);
 });
 
-app.post('/Slogans', (req, res) => {
+app.get('/Slogans/:SloganNum', (req, res) => {
     Slogans[req.params.SloganNum]++;
+    console.log(req.params);
+    res.send('your request accepted');
 
     // parameters = SloganNum
-})
+});
 
 app.use((req, res, next) => {
     res.status(404).send("با عرض پوزش چنین صفحه ای موجود نیست");
