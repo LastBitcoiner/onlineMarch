@@ -28,7 +28,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:SloganNum', (req, res) => {
-    res.send(`<b>counted</b> ${Slogans[req.params.SloganNum]} Slogan`);
+    console.log("check request recived");
+    //res.send("your Req Recived");
+    res.send(`${Slogans[req.params.SloganNum]}`);
 });
 
 app.get('/Slogans/:SloganNum', (req, res) => {
