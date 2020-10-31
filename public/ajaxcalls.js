@@ -27,8 +27,8 @@ function SubmitSlogan(SloganNumber) {
 */
 const sloganWords = ['مرگ بر آمریکا','مرگ بر ضد ولایت فقیه','مرگ بر منافقین و کفار','مرگ بر انگلیس','مرگ بر اسرائیل','',''];
 
-function declareText(SloganNumber) {
-    document.getElementById("2").innerHTML = `مرگ بر آمریکا ${SloganNumber}`;
+function declareText(response, SloganNumber) {
+    document.getElementById("2").innerHTML = `${sloganWords[SloganNumber]} ${response}`;
 }
 
 function pushSlogan(SloganNumber, callback) {
@@ -49,7 +49,7 @@ function checkSlogan(SloganNumber, callback) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             console.log(`checked number: ${xhr.responseText}`);
-            callback(xhr.responseText);
+            callback(xhr.responseText, SloganNumber);
             //document.getElementById("2").innerHTML = `down with America ${xhr.responseTextfoo}`;
         }
     }
