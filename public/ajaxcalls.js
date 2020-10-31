@@ -25,11 +25,7 @@ function SubmitSlogan(SloganNumber) {
     document.getElementById("2").innerHTML = `down with America ${foo}`;
 }
 */
-const sloganWords = ['مرگ بر آمریکا','مرگ بر ضد ولایت فقیه','مرگ بر منافقین و کفار','مرگ بر انگلیس','مرگ بر اسرائیل','',''];
-
-function declareText(response, SloganNumber) {
-    document.getElementById("2").innerHTML = `${sloganWords[SloganNumber]} ${response}`;
-}
+const sloganWords = ['مرگ بر آمریکا','مرگ بر ضد ولایت فقیه','مرگ بر منافقین و کفار','مرگ بر انگلیس','مرگ بر اسرائیل'];
 
 function pushSlogan(SloganNumber, callback) {
     const xhr = new XMLHttpRequest();
@@ -48,7 +44,7 @@ function checkSlogan(SloganNumber, callback) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            console.log(`checked number: ${xhr.responseText}`);
+            // console.log(`checked number: sloan(${SloganNumber})${xhr.responseText}`);
             callback(xhr.responseText, SloganNumber);
             //document.getElementById("2").innerHTML = `down with America ${xhr.responseTextfoo}`;
         }
@@ -57,12 +53,19 @@ function checkSlogan(SloganNumber, callback) {
     xhr.send();
 }
 
+function declareText(response, SloganNumber) {
+    console.log(response, SloganNumber);
+    document.getElementById(`${SloganNumber}`).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
+}
+
 function updateButton(response, SloganNumber) {
     console.log(response);
     document.getElementById("2").innerHTML = `${sloganWords[SloganNumber]} ${response}`;
 }
 
-checkSlogan(2,declareText);
+sloganWords.forEach((element,arr) => checkSlogan(arr,declareText));
+
+// checkSlogan(2,declareText);
 
 
 /*
