@@ -9,7 +9,7 @@ const path = require("path");
 const app = express();
 
 let visitCount = 0;
-let Slogans = new Array(20).fill(0);
+let Slogans = new Array(6).fill(0);
 
 /**
  *  App Configuration */
