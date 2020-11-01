@@ -3,7 +3,6 @@ extends layout
 block header-tags
   meta(charset="UTF-8")
   meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  script(src="/ajaxcalls.js")
   script(src="/jquery-3.5.1.min.js")
   script(src="/bootstrap.min.js")
   link(rel="stylesheet" href="/style.css")
@@ -29,3 +28,5 @@ block layout-content
         .row
           a#4.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(4, updateButton)") مرگ بر اسرائیل
         .row.footer
+
+        script(src="/ajaxcalls.js")
