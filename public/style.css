@@ -1,0 +1,35 @@
+@import url("/public/css/font-style.css");
+
+body {
+    background-image: url("/public/background.jpg");
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin-top: 5%;
+    /* background-color: blanchedalmond; */
+    height: 1000px;
+}
+
+.btn {
+    float: right;
+    margin-right: .35rem;
+}
+
+.top-buttons {
+    font-family: IRANSans ;
+    font-size: small !important;
+    padding: .25rem .35rem !important;
+    border-radius: 1rem !important;
+    background-color: #3D73DD !important;
+    border-color: #3D73DD !important;
+}
+
+#stats {
+    margin-top: .25rem;
+}
+
+.slogans {
+    background-color: blanchedalmond;
+    margin-top: 19rem;
+}
