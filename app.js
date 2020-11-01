@@ -45,7 +45,7 @@ app.use((req, res, next) => {
     res.status(404).send("با عرض پوزش چنین صفحه ای موجود نیست");
 });
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('your app listening on port 3000.');
 });
 
