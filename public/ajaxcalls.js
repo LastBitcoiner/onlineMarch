@@ -55,7 +55,7 @@ function checkSlogan(SloganNumber, callback) {
 
 function declareText(response, SloganNumber) {
     console.log(response, SloganNumber);
-    document.getElementById(`${SloganNumber}`).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
+    document.getElementById(SloganNumber).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
 }
 
 function updateButton(response, SloganNumber) {
