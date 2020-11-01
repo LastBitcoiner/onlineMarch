@@ -44,7 +44,7 @@ function checkSlogan(SloganNumber, callback) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            // console.log(`checked number: sloan(${SloganNumber})${xhr.responseText}`);
+            console.log(`checked number: ${xhr.responseText}`);
             callback(xhr.responseText, SloganNumber);
             //document.getElementById("2").innerHTML = `down with America ${xhr.responseTextfoo}`;
         }
