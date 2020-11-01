@@ -1,30 +1,26 @@
 extends layout
 
 block header-tags
-  meta(charset="UTF-8")
-  meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  script(src="/jquery-3.5.1.min.js")
-  script(src="/bootstrap.min.js")
   script(src="/ajaxcalls.js")
   link(rel="stylesheet" href="/style.css")
   link(rel="stylesheet", href="/bootstrap.min.css")
 
 block layout-content
-  #wrapper
-      embed(src="/public/sound.mp3" width="180" height="0" loop="true" autostart="true" hidden="true")
-      .container
-        .row
-          a#welcome.btn.btn-primary.top-buttons(href="#") راهپیمایی آنلاین به مناسبت 13 آبان
-        .row
-          a#stats.btn.btn-primary.top-buttons(href="#")  723 شرکت کننده تا کنون !
-        .row.slogans
-          a#0.btn.btn-primary.sloganButton(href="#") مرگ بر آمریکا
-        .row
-          a#1.btn.btn-primary.sloganButton(href="#") مرگ بر ضد ولایت فقیه
-        .row
-          a#2.btn.btn-primary.sloganButton(href="#") مرگ بر منافقین و کفار
-        .row
-          a#3.btn.btn-primary.sloganButton(href="#") مرگ بر انگلیس
-        .row
-          a#4.btn.btn-primary.sloganButton(href="#") مرگ بر اسرائیل
-        .row.footer
+  div.View.container
+    h1.Banner راهپیمایی
+    div.Message
+      div.Title
+        h3 به راهپیمایی انلاین خوش آمدید
+        br
+        h1 تعداد شرکت کنندگان در راهپیمایی آنلاین #{visitors}
+        h3
+          a(id=0 ,class='btn btn-primary btn-lg active',role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(0, updateButton)") مرگ بر آمریکا
+          a(id=1 ,class='btn btn-primary btn-lg active',role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(1, updateButton)") مرگ بر ضد ولایت فقیه
+          a(id=2 ,class='btn btn-primary btn-lg active',role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(2, updateButton)") مرگ بر منافقین و کفار
+          a(id=3 ,class='btn btn-primary btn-lg active',role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(3, updateButton)") مرگ بر انگلیس
+          a(id=4 ,class='btn btn-primary btn-lg active',role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(4, updateButton)") مرگ بر اسرائیل
+      span.Details گزینه های بیشتر
+    div.NavButtons
+      a(href="/user")
+          div.NavButton حوزه 5 شهید فهمیده
+

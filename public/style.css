@@ -1,7 +1,7 @@
-@import url("/css/font-style.css");
+@import url("/public/css/font-style.css");
 
 #wrapper {
-    background-image: url("/background.jpg");
+    background-image: url("/public/background.jpg");
     background-repeat: no-repeat;
 }
 
