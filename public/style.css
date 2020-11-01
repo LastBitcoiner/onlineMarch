@@ -1,12 +1,12 @@
 @import url("/public/css/font-style.css");
 
-body {
+#wrapper {
     background-image: url("/public/background.jpg");
     background-repeat: no-repeat;
 }
 
 .container {
-    margin-top: 5%;
+    padding-top: 5%;
     /* background-color: blanchedalmond; */
     height: 1000px;
 }
@@ -41,4 +41,9 @@ body {
     margin-left: 0.75rem;
     width: 100%;
 
+}
+.footer {
+    margin-top: 0.8rem;
+    height: 90px;
+    background-color: blanchedalmond;
 }
