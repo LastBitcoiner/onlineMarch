@@ -60,7 +60,7 @@ function declareText(response, SloganNumber) {
 
 function updateButton(response, SloganNumber) {
     console.log(response);
-    document.getElementById(`${SloganNumber}`).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
+    document.getElementById(SloganNumber).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
 }
 
 sloganWords.forEach((element,arr) => checkSlogan(arr,declareText));
