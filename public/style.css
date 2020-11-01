@@ -17,7 +17,7 @@ body {
 }
 
 .top-buttons {
-    font-family: IRANSans ;
+    font-family: "IRANSans";
     font-size: small !important;
     padding: .25rem .35rem !important;
     border-radius: 1rem !important;
@@ -30,6 +30,15 @@ body {
 }
 
 .slogans {
-    background-color: blanchedalmond;
     margin-top: 19rem;
+}
+.sloganButton {
+    background-color: #F7542E !important;
+    border-color: #F7542E !important;
+    border-radius: 0.67rem !important;
+    margin-top: 0.67rem;
+    margin-right: .75rem;
+    margin-left: 0.75rem;
+    width: 100%;
+
 }
