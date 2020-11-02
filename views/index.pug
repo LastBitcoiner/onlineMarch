@@ -36,8 +36,10 @@ block layout-content
         script(src="/ajaxcalls.js")
         script.
           var x = document.getElementById("myAudio");
+          var y = document.getElementById("0");
           function enableAutoplay() {
           x.autoplay = true;
           x.load();
+          y.setAttribute("onclick", "pushSlogan(0, updateButton)");
           }
           enableAutoplay();
