@@ -11,7 +11,10 @@ block header-tags
 
 block layout-content
   #wrapper
-      embed(src="/sound.mp3" width="180" height="0" loop="true" autostart="true" hidden="true")
+      audio#myAudio(controls='')
+	      source(src='sound.ogg' type='audio/ogg')
+	      source(src='sound.mp3' type='audio/mpeg')
+          |   Your browser does not support the audio element.
       .container
         .row
           a#welcome.btn.btn-primary.top-buttons(role='button' ,aria-pressed="true" , href='#') راهپیمایی آنلاین به مناسبت 13 آبان
@@ -30,3 +33,10 @@ block layout-content
         .row.footer
 
         script(src="/ajaxcalls.js")
+		script.
+			var x = document.getElementById("myAudio");
+			function enableAutoplay() {
+			x.autoplay = true;
+			x.load();
+			}
+			enableAutoplay();
