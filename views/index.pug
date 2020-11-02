@@ -22,7 +22,7 @@ block layout-content
         .row
           a#stats.btn.btn-primary.top-buttons(role='button' ,aria-pressed="true" , href='#')  #{visitors} شرکت کننده تا کنون !
         .row.slogans
-          a#0.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(0, updateButton)") مرگ بر آمریکا
+          a#0.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(0, updateButton); enableAutoplay()") مرگ بر آمریکا
         .row
           a#1.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(1, updateButton)") مرگ بر ضد ولایت فقیه
         .row
