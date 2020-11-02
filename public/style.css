@@ -48,3 +48,7 @@
     height: 90px;
     background-color: blanchedalmond;
 }
+
+#myAudio {
+    display: none;
+}
