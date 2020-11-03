@@ -8,8 +8,9 @@ const path = require("path");
 
 const app = express();
 
-let visitCount = 0;
+let visitCount = 69820;
 let Slogans = new Array(6).fill(0);
+Slogans = [555000,410000,235000,240000,300000];
 
 /**
  *  App Configuration */
@@ -28,14 +29,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:SloganNum', (req, res) => {
-    console.log(`check request recived ${Slogans}`);
+    //console.log(`check request recived ${Slogans}`);
     //res.send("your Req Recived");
     res.send(`${Slogans[req.params.SloganNum]}`);
 });
 
 app.get('/Slogans/:SloganNum', (req, res) => {
     Slogans[req.params.SloganNum]++;
-    console.log(req.params);
+    //console.log(req.params);
     res.send(`${Slogans[req.params.SloganNum]}`);
 
     // parameters = SloganNum
