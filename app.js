@@ -24,8 +24,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 app.get('/', (req, res) => {
-    visitCount++;
-    res.render("index", { title: "خانه", visitors: visitCount });
+    // visitCount++;
+    // res.render("index", { title: "خانه", visitors: visitCount });
+    res.render("index");
 });
 
 app.get('/:SloganNum', (req, res) => {
@@ -35,7 +36,7 @@ app.get('/:SloganNum', (req, res) => {
 });
 
 app.get('/Slogans/:SloganNum', (req, res) => {
-    Slogans[req.params.SloganNum]++;
+    // Slogans[req.params.SloganNum]++;
     //console.log(req.params);
     res.send(`${Slogans[req.params.SloganNum]}`);
 

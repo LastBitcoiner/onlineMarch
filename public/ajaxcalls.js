@@ -28,7 +28,7 @@ function SubmitSlogan(SloganNumber) {
 const sloganWords = ['مرگ بر آمریکا','مرگ بر ضد ولایت فقیه','مرگ بر منافقین و کفار','مرگ بر انگلیس','مرگ بر اسرائیل'];
 
 function pushSlogan(SloganNumber, callback) {
-    const xhr = new XMLHttpRequest();
+    /* const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             console.log(` ${xhr.responseText}`);
@@ -38,10 +38,12 @@ function pushSlogan(SloganNumber, callback) {
     }
     xhr.open('GET', `/Slogans/${SloganNumber}`, true);
     xhr.send();
+    */
+   console.log("پایان زمان رای گیری");
 }
 
 function checkSlogan(SloganNumber, callback) {
-    const xhr = new XMLHttpRequest();
+    /* const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             console.log(`checked number: ${xhr.responseText}`);
@@ -50,7 +52,8 @@ function checkSlogan(SloganNumber, callback) {
         }
     }
     xhr.open('GET', `/${SloganNumber}`, true);
-    xhr.send();
+    xhr.send();*/
+    console.log("اتمام زمان رای گیری");
 }
 
 function declareText(response, SloganNumber) {
@@ -63,7 +66,7 @@ function updateButton(response, SloganNumber) {
     document.getElementById(SloganNumber).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
 }
 
-sloganWords.forEach((element,arr) => checkSlogan(arr,declareText));
+// sloganWords.forEach((element,arr) => checkSlogan(arr,declareText));
 
 // checkSlogan(2,declareText);
 
