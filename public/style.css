@@ -1,7 +1,11 @@
 @import url("/css/font-style.css");
 
 #wrapper {
+<<<<<<< HEAD
     background-image: url("https://bayanbox.ir/download/7607809249912267682/background-end.jpg");
+=======
+    background-image: url("https://bayanbox.ir/download/2955956381995512090/background.jpg");
+>>>>>>> parent of 823dd02... optimize more
     background-repeat: no-repeat;
     /*background-size: 100%;*/
 }
