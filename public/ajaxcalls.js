@@ -25,7 +25,7 @@ function SubmitSlogan(SloganNumber) {
     document.getElementById("2").innerHTML = `down with America ${foo}`;
 }
 */
-const sloganWords = ['مرگ بر آمریکا','مرگ بر ضد ولایت فقیه','مرگ بر منافقین و کفار','مرگ بر انگلیس','مرگ بر اسرائیل'];
+const sloganWords = ['مرگ بر آمریکا','مرگ بر سازش کار','مرگ بر فتنه گر','مرگ بر انگلیس','مرگ بر اسرائیل'];
 
 function pushSlogan(SloganNumber, callback) {
     const xhr = new XMLHttpRequest();
