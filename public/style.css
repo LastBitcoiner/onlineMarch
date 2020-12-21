@@ -2,10 +2,14 @@
 
 #wrapper {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-image: url("https://bayanbox.ir/download/7607809249912267682/background-end.jpg");
 =======
     background-image: url("https://bayanbox.ir/download/2955956381995512090/background.jpg");
 >>>>>>> parent of 823dd02... optimize more
+=======
+    background-image: url("http://s17.picofile.com/file/8412714400/background.jpg");
+>>>>>>> parent of b01aefd... end cooming soon
     background-repeat: no-repeat;
     /*background-size: 100%;*/
 }
@@ -24,15 +28,14 @@
 .top-buttons {
     font-family: "IRANSans";
     font-size: small !important;
+    padding: .25rem .35rem !important;
     border-radius: 1rem !important;
-
+    background-color: #3D73DD !important;
+    border-color: #3D73DD !important;
 }
 
 #stats {
-    padding: .25rem .35rem !important;
     margin-top: .25rem;
-    background-color: #3D73DD !important;
-    border-color: #3D73DD !important;
 }
 
 .slogans {
@@ -65,6 +68,7 @@
 }
 .logoimage {
     float: right !important;
+<<<<<<< HEAD
 }
 #welcome {
     background-color: #e74c3c !important;
@@ -74,4 +78,6 @@
 #btns {
     background-color: #3D73DD !important;
     border-color: #3D73DD !important;
+=======
+>>>>>>> parent of b01aefd... end cooming soon
 }
