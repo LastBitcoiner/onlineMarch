@@ -31,14 +31,15 @@ block layout-content
         .row
           a#4.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(4, updateButton)") مرگ بر اسرائیل
 
-        script(src="https://bayanbox.ir/download/7413877007342115404/ajaxcalls.js")
+        script(src="/ajaxcalls.js")
         script.
-          var x = document.getElementById("myAudio");
-          var y = document.getElementById("0");
-
+          let x = document.getElementById("myAudio");
+          let y = document.getElementById("0");
+          let s;
           function removeOnClick() {
             y.setAttribute("onclick", "pushSlogan(0, updateButton)");
           }
+
           function enableAutoplay(callback) {
           x.autoplay = true;
           x.load();
