@@ -24,7 +24,7 @@
 .container {
   padding-top: 5%;
   /* background-color: blanchedalmond; */
-  height: 640px;
+  height: 690px;
 }
 
 .btn {
@@ -58,9 +58,14 @@
   width: 100%;
 }
 .footer {
-  margin-top: 0.8rem;
-  height: 90px;
-  background-color: blanchedalmond;
+  /* margin-top: 0.8rem;*/
+  background-color: #dcdcdc;
+  position: relative;
+  height: 50px;
+
+  bottom: 0;
+
+  width: 100%;
 }
 
 #myAudio {
