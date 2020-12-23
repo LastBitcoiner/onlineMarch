@@ -1,7 +1,7 @@
 @import url("/css/font-style.css");
 
 #wrapper {
-  background-image: url("http://s17.picofile.com/file/8412714400/background.jpg");
+  background-image: url("https://bayanbox.ir/download/2955956381995512090/background.jpg");
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
 
@@ -61,8 +61,8 @@
   /* margin-top: 0.8rem;*/
   background-color: #dcdcdc;
   position: relative;
-  height: 50px;
-
+  height: 60px;
+  font-size: small;
   bottom: 0;
 
   width: 100%;

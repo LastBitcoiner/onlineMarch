@@ -17,36 +17,22 @@ block layout-content
 
       .container
         .row
-          a#welcome.btn.btn-primary.top-buttons(role='button' ,aria-pressed="true" , href='#') راهپیمایی آنلاین به مناسبت 13 آبان
+          a#welcome.btn.btn-primary.top-buttons(role='button' ,aria-pressed="true" , href='#') راهپیمایی آنلاین به مناسبت 9 دی
         .row
           a#stats.btn.btn-primary.top-buttons(role='button' ,aria-pressed="true" , href='#')  #{visitors} شرکت کننده تا کنون !
         .row.slogans
-          a#0.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(0, updateButton); enableAutoplay(removeOnClick)") مرگ بر آمریکا 4464345
+          a#0.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(0, updateButton); enableAutoplay(setAudioState)") مرگ بر آمریکا 4464345
         .row
-          a#1.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(1, updateButton)") مرگ بر سازش کار
+          a#1.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(1, updateButton); enableAutoplay(setAudioState)") مرگ بر سازش کار
         .row
-          a#2.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(2, updateButton)") مرگ بر فتنه گر
+          a#2.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(2, updateButton); enableAutoplay(setAudioState)") مرگ بر فتنه گر
         .row
-          a#3.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(3, updateButton)") مرگ بر انگلیس
+          a#3.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(3, updateButton); enableAutoplay(setAudioState)") مرگ بر انگلیس
         .row
-          a#4.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(4, updateButton)") مرگ بر اسرائیل
-      footer.footer.font-small.blue
+          a#4.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(4, updateButton); enableAutoplay(setAudioState)") مرگ بر اسرائیل
+      footer.footer.blue
         .footer-copyright.text-center.py-3
-          | © 2020 Copyright:
-          a(href="https://codedec.com/")  Codedec.com
-
-        script(src="/ajaxcalls.js")
-        script.
-          let x = document.getElementById("myAudio");
-          let y = document.getElementById("0");
-          let s;
-          function removeOnClick() {
-            y.setAttribute("onclick", "pushSlogan(0, updateButton)");
-          }
-
-          function enableAutoplay(callback) {
-          x.autoplay = true;
-          x.load();
-          callback()
-          }
-          enableAutoplay();
+          | حوزه مقاومت بسیج ۵ شهیدفهمیده
+          | ناحیه مقاومت بسیج امام رضا علیه السلام
+          | سپاه حضرت صاحب الزمان عج اصفهان 
+        script(src="/functions.js")

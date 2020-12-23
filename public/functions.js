@@ -40,9 +40,24 @@ sloganWords.forEach((element,arr) => checkSlogan(arr,declareText));
 
 // checkSlogan(2,declareText);
 
+/**
+ * PLAY MUSIC */
 
-/*
-function sendSlogan(SloganNumber) {
-    pushSlogan(SloganNumber, mycallback);
+
+let x = document.getElementById("myAudio");
+let y = document.getElementById("0");
+let audiostate = 0;
+
+function setAudioState() {
+    audiostate = 1;
 }
-*/
+
+function enableAutoplay(callback) {
+    if (audiostate == 0) {
+        x.autoplay = true;
+        x.load();
+        callback();
+    }
+}
+
+enableAutoplay();
