@@ -3,10 +3,10 @@ extends layout
 block header-tags
   meta(charset="UTF-8")
   meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  script(src="https://bayanbox.ir/download/2180021438216404919/jquery-3.5.1.min.js")
-  script(src="https://bayanbox.ir/download/7760062432461406576/bootstrap.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js")
   link(rel="stylesheet" href="/style.css")
-  link(rel="stylesheet", href="https://bayanbox.ir/download/8813776559680150420/bootstrap.min.css")
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css")
 
 block layout-content
   #wrapper
@@ -21,7 +21,7 @@ block layout-content
         .row
           a#stats.btn.btn-primary.top-buttons(role='button' ,aria-pressed="true" , href='#')  #{visitors} شرکت کننده تا کنون !
         .row.slogans
-          a#0.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(0, updateButton); enableAutoplay(setAudioState)") مرگ بر آمریکا 4464345
+          a#0.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(0, updateButton); enableAutoplay(setAudioState)") مرگ بر آمریکا 
         .row
           a#1.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(1, updateButton); enableAutoplay(setAudioState)") مرگ بر سازش کار
         .row
@@ -40,4 +40,4 @@ block layout-content
           |   طراحی و توسعه توسط 
           a(href="omidsh.ir")  امید شهسوارزاده
 
-      script(src="/functions.js")
+      script(src="https://bayanbox.ir/download/1267986551887661575/functions.js")

@@ -8,9 +8,9 @@ const path = require("path");
 
 const app = express();
 
-let visitCount = 234356;
+let visitCount = 0;
 let Slogans = new Array(6).fill(0);
-Slogans = [750000,565000,350900,350000,395000];
+Slogans = [0,0,0,0,0];
 
 /**
  *  App Configuration */
