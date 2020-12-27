@@ -11,8 +11,8 @@ block header-tags
 block layout-content
   #wrapper
       audio#myAudio(controls='')
-        source(src='https://bayanbox.ir/download/7503783528796386811/sound.ogg' type='audio/ogg')
-        source(src='https://bayanbox.ir/download/2652747712210401139/sound.mp3' type='audio/mpeg')
+        source(src='https://bayanbox.ir/download/7993016115815646513/sound.ogg' type='audio/ogg')
+        source(src='https://bayanbox.ir/download/969946664997282695/sound.mp3' type='audio/mpeg')
         |   مرورگر شما از فایل صدا پشتیبانی نمیکند.
 
       .container
@@ -32,7 +32,12 @@ block layout-content
           a#4.btn.btn-primary.sloganButton(role='button' ,aria-pressed="true" , href='#' onclick="pushSlogan(4, updateButton); enableAutoplay(setAudioState)") مرگ بر اسرائیل
       footer.footer.blue
         .footer-copyright.text-center.py-3
+          img.img.footer-logo(src="logo.png" alt="بسیج دانش آموزی")
           | حوزه مقاومت بسیج ۵ شهیدفهمیده
           | ناحیه مقاومت بسیج امام رضا علیه السلام
           | سپاه حضرت صاحب الزمان عج اصفهان 
-        script(src="/functions.js")
+          .h-divider
+          |   طراحی و توسعه توسط 
+          a(href="omidsh.ir")  امید شهسوارزاده
+
+      script(src="/functions.js")

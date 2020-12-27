@@ -3,7 +3,7 @@
 #wrapper {
   background-image: url("https://bayanbox.ir/download/2955956381995512090/background.jpg");
   /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
+  background-position: 18% center;
 
   /* Background image doesn't tile */
   background-repeat: no-repeat;
@@ -59,13 +59,28 @@
 }
 .footer {
   /* margin-top: 0.8rem;*/
+  padding-top: 0;
+  margin-top: 0;
   background-color: #dcdcdc;
   position: relative;
-  height: 60px;
+  height: auto;
   font-size: small;
   bottom: 0;
-
   width: 100%;
+}
+.footer-logo {
+  width: 1.2rem;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.h-divider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid gray;
 }
 
 #myAudio {
