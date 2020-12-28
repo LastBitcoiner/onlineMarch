@@ -43,17 +43,7 @@ sloganWords.forEach((element,arr) => checkSlogan(arr,declareText));
 /**
  * PLAY MUSIC */
 
-let x = document.getElementById("myAudio");
-let audiostate = 0;
 
-function enableAutoplay() {
-    if (audiostate == 0) {
-        x.autoplay = true;
-        x.load();
-        audiostate = 1;
-    }
-}
-enableAutoplay();
         /*function setAudioState() {
           audiostate = 1;
         }*/
