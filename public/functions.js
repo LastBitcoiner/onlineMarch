@@ -60,4 +60,4 @@ function enableAutoplay(callback) {
     }
 }
 
-enableAutoplay();
+enableAutoplay(setAudioState());
