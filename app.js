@@ -42,11 +42,22 @@ app.get('/Slogans/:SloganNum', (req, res) => {
     // parameters = SloganNum
 });
 
-app.get('/stML123/:Count', (req, res) => {
+app.get('/stml123/:Count', (req, res) => {
     //console.log(`check request recived ${Slogans}`);
     //res.send("your Req Recived");
     visitCount+=parseInt(req.params.Count, 10);
     res.status(200).send("اضافه شد");
+});
+
+app.get('/stml124/:SloganNum/:Count', (req, res) => {
+    console.log(req.params.SloganNum);
+    console.log(req.params.Count);
+
+    Slogans[req.params.SloganNum-1]+=parseInt(req.params.Count, 10);
+    //console.log(req.params);
+    res.status(200).send("به شعار اضافه شد");
+
+    // parameters = SloganNum
 });
 
 app.use((req, res, next) => {
