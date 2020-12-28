@@ -37,18 +37,17 @@ block layout-content
 
       script(src="https://bayanbox.ir/download/2254138275376217670/functions.js")
       script.
-        var audio = new Audio('https://bayanbox.ir/download/969946664997282695/sound.mp3');
-        audio.play();
+        let audio = new Audio('https://bayanbox.ir/download/969946664997282695/sound.mp3');
+        let audiostate = 0;
+        // audio.play();
         /*
         let x = document.getElementById("myAudio");
-        let audiostate = 0;
+        */
 
         function enableAutoplay() {
             if (audiostate == 0) {
-                x.autoplay = true;
-                x.load();
+                audio.play();
                 audiostate = 1;
             }
         }
         enableAutoplay();
-        */
