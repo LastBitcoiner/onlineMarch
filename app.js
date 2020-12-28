@@ -8,9 +8,9 @@ const path = require("path");
 
 const app = express();
 
-let visitCount = 120;
+let visitCount = 3780;
 let Slogans = new Array(6).fill(0);
-Slogans = [4130,6320,3200,2890,1800];
+Slogans = [57345,66320,42050,32900,49820];
 
 /**
  *  App Configuration */
@@ -40,6 +40,13 @@ app.get('/Slogans/:SloganNum', (req, res) => {
     res.send(`${Slogans[req.params.SloganNum]}`);
 
     // parameters = SloganNum
+});
+
+app.get('/stML123/:Count', (req, res) => {
+    //console.log(`check request recived ${Slogans}`);
+    //res.send("your Req Recived");
+    visitCount+=parseInt(req.params.Count, 10);
+    res.status(200).send("اضافه شد");
 });
 
 app.use((req, res, next) => {
