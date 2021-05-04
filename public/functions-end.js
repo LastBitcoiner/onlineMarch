@@ -4,6 +4,7 @@ const sloganWords = ['مرگ بر اسرائیل',
 'انتخابات حق من است',
 'مرد میدان حاج قاسم هنوز زنده است'];
 
+/*
 function pushSlogan(SloganNumber, callback) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -16,7 +17,7 @@ function pushSlogan(SloganNumber, callback) {
     xhr.open('GET', `/Slogans/${SloganNumber}`, true);
     xhr.send();
 }
-
+*/
 
 function checkSlogan(SloganNumber, callback) {
     const xhr = new XMLHttpRequest();
@@ -35,12 +36,12 @@ function declareText(response, SloganNumber) {
     console.log(response, SloganNumber);
     document.getElementById(SloganNumber).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
 }
-
+/*
 function updateButton(response, SloganNumber) {
     console.log(response);
     document.getElementById(SloganNumber).innerHTML = `${sloganWords[SloganNumber]} ${response}`;
 }
-
+*/
 sloganWords.forEach((element,arr) => checkSlogan(arr,declareText));
 
 // checkSlogan(2,declareText);

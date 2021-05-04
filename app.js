@@ -36,7 +36,7 @@ app.get('/:SloganNum', (req, res) => {
 
 app.get('/Slogans/:SloganNum', (req, res) => {
     Slogans[req.params.SloganNum]++;
-    //console.log(req.params);
+    // console.log(req.params);
     res.send(`${Slogans[req.params.SloganNum]}`);
 
     // parameters = SloganNum
