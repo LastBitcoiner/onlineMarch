@@ -8,9 +8,9 @@ const path = require("path");
 
 const app = express();
 
-let visitCount = 63;
+let visitCount = 10;
 let Slogans = new Array(6).fill(0);
-Slogans = [53,54,57,63,50];
+Slogans = [0,0,0,0,0];
 
 /**
  *  App Configuration */
@@ -64,7 +64,7 @@ app.use((req, res, next) => {
     res.status(404).send("با عرض پوزش چنین صفحه ای موجود نیست");
 });
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('your app listening on port 3000.');
     console.log(Slogans);
 });
